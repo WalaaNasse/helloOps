@@ -36,6 +36,9 @@ input_data = {
 }
 
 st.write(input_data)
-response = requests.post("http://0.0.0.0:8000/predict/", json=input_data)
+response = requests.post("http://127.0.0.1:8000/predict/", json=input_data)
+
+
 prediction = response.json()
+
 st.write("Predicition Outcome:", prediction)

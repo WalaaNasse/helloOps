@@ -22,3 +22,4 @@ async def predict_cancer(data: dict):
     prediction = model.predict(features)
     class_name = label_class.inverse_transform(prediction)[0]
     return {"class": class_name}
+
